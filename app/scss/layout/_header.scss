@@ -1,0 +1,40 @@
+@use '../globals/colors' as *;
+header {
+	.top-header {
+		background: $primary-color;
+		padding: 14px 15px;
+		&-wrapper {
+			width: 100%;
+			padding: 0px 15px;
+			margin: 0 auto;
+		}
+		&-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-menu {
+			li {
+				display: inline-block;
+				margin-right: 34px;
+				color: $white;
+				font-size: 15px;
+				font-weight: 500;
+				i {
+					margin-right: 8px;
+				}
+				a {
+					color: $white;
+					font-size: 15px;
+					font-weight: 500;
+					&:hover {
+						color: $secondary-color;
+						text-decoration: none;
+						transition: 0.5s all;
+						-moz-transition: 0.5s all;
+					}
+				}
+			}
+		}
+	}
+}
