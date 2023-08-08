@@ -1,0 +1,50 @@
+@use '../globals/colors' as *;
+.banner {
+	margin-top: -5em;
+	&-item {
+		padding: 0 15px;
+		text-align: center;
+	}
+	&-content {
+		position: relative;
+		padding: 40px 30px;
+		z-index: 1;
+		border-radius: 10px;
+		&.bg-blue {
+			background-color: #007bff;
+			height: 100%;
+		}
+		&.bg-yellow {
+			background-color: #ffc107;
+			height: 100%;
+		}
+		&.bg-pink {
+			background-color: #ff4f81;
+			height: 100%;
+		}
+		&.bg-green {
+			background-color: #1ee697;
+			height: 100%;
+		}
+		> h4 {
+			margin-top: 40px;
+		}
+		> i {
+			color: $white;
+			font-size: 45px;
+		}
+	}
+	&-title {
+		display: block;
+		color: $white;
+		transition: all 0.5s;
+		margin-top: 25px;
+		font-weight: 600;
+		font-size: 24px;
+		&:hover {
+			color: #000;
+			transition: all 0.5s;
+			text-decoration: none;
+		}
+	}
+}
