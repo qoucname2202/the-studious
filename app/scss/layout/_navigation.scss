@@ -1,0 +1,93 @@
+@use '../globals/colors' as *;
+header {
+	background-color: transparent;
+	padding: 0px;
+	transition: all 0.4s ease 0s;
+	display: grid;
+	border-bottom: none;
+	align-items: center;
+	&.nav-fixed {
+		position: sticky;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+	.navbar {
+		display: flex;
+		align-items: center;
+		padding: 1.2rem 1rem;
+		border: none;
+		box-shadow: none;
+		&-nav {
+			margin-left: auto !important;
+			.nav-item {
+				padding: 0 12px;
+				transition: all 0.5s ease;
+				.dropdown-menu {
+					transform: translateX(-50px);
+					background: $white;
+					border: 1px solid transparent;
+					box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+					.dropdown-item {
+						font-size: 16px;
+						color: $blue-dark;
+						padding: 5px 24px;
+						font-weight: 600;
+						text-transform: uppercase;
+						&:hover {
+							color: $secondary-color;
+						}
+					}
+				}
+				.nav-link {
+					font-size: 16px;
+					color: $blue-dark;
+					font-weight: 600;
+					text-transform: uppercase;
+					transition: all 0.5s;
+					&:hover {
+						color: $secondary-color;
+					}
+					&.active {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+		form {
+			.search-popup {
+				font-size: 15px;
+				color: $blue-dark;
+				border: none;
+				background: transparent;
+				padding: 10px 35px 10px 14px;
+				width: 100%;
+				border-radius: 30px;
+				border: 2px solid #eee;
+			}
+			.btn-search {
+				position: absolute;
+				color: $primary-color;
+				right: 0;
+				padding: 8px 12px 8px 2px;
+			}
+		}
+		&-brand {
+			margin: 0;
+			padding: 0;
+			font-size: 26px;
+			color: $primary-color;
+			font-weight: 600;
+			> img {
+				width: 48px;
+				height: 48px;
+				margin-right: 0.25rem;
+				object-fit: cover;
+			}
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}

@@ -65,7 +65,8 @@ a {
 }
 
 img {
-	display: block;
+	vertical-align: middle;
+	border-style: none;
 	max-width: 100%;
 }
 
@@ -115,4 +116,8 @@ ul {
 	margin-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+nav ul li {
+	display: inline-block;
 }
