@@ -194,11 +194,13 @@ header.nav-fixed {
   right: 0;
   left: 0;
   z-index: 1030;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 header .navbar {
   display: flex;
   align-items: center;
-  padding: 1.2rem 1rem;
+  padding: 1rem;
   border: none;
   box-shadow: none;
 }
@@ -305,6 +307,66 @@ header .navbar-brand:hover {
   color: #fff;
   background-color: #ff6e65;
   border-color: #ff6e65;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 89vh;
+  position: relative;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding: unset;
+}
+.carousel-indicators {
+  left: unset;
+  margin: unset;
+  right: 20px;
+  bottom: 100px;
+  flex-direction: column;
+  gap: 2px;
+}
+.carousel-indicators > button {
+  display: inline-block !important;
+  padding: 7px !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-radius: 50%;
+  margin: unset;
+  background-color: #ff6e65 !important;
+}
+.carousel-caption {
+  position: absolute;
+  max-width: 600px;
+  top: 20%;
+  padding: 0;
+  text-align: left;
+}
+.carousel-caption h5 {
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+}
+.carousel-submit {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #060606;
+  border-radius: 4px;
+  background: #fff;
+  border: none;
+  transition: all 0.25s ease-in-out;
+}
+.carousel-submit > i {
+  margin-left: 5px;
+}
+.carousel-submit:hover {
+  color: #fff;
+  background-color: #ff6e65;
 }
 
 /*# sourceMappingURL=style.css.map */

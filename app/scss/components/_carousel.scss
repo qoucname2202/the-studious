@@ -1,0 +1,62 @@
+@use '../globals/colors' as *;
+.carousel {
+	&-item {
+		width: 100%;
+		height: 89vh;
+		position: relative;
+		object-fit: cover;
+		background-repeat: no-repeat;
+		padding: unset;
+	}
+	&-indicators {
+		left: unset;
+		margin: unset;
+		right: 20px;
+		bottom: 100px;
+		flex-direction: column;
+		gap: 2px;
+		> button {
+			display: inline-block !important;
+			padding: 7px !important;
+			width: 0 !important;
+			height: 0 !important;
+			border-radius: 50%;
+			margin: unset;
+			background-color: $secondary-color !important;
+		}
+	}
+	&-caption {
+		position: absolute;
+		max-width: 600px;
+		top: 20%;
+		padding: 0;
+		text-align: left;
+		h5 {
+			font-size: 70px;
+			line-height: 80px;
+			font-weight: bold;
+			color: $white;
+			text-align: left;
+		}
+	}
+	&-submit {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		padding: 14px 30px;
+		font-weight: 600;
+		font-size: 16px;
+		color: #060606;
+		border-radius: 4px;
+		background: #fff;
+		border: none;
+		transition: all 0.25s ease-in-out;
+		> i {
+			margin-left: 5px;
+		}
+		&:hover {
+			color: $white;
+			background-color: $secondary-color;
+		}
+	}
+}
