@@ -352,35 +352,117 @@ header .navbar-brand:hover {
   color: #707070;
   letter-spacing: 0.4px;
 }
-.welcome .title-heading {
-  max-width: 700px;
+
+.courses-wrapper {
+  background: #f8f9fa;
 }
-.welcome .title-sub {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 600;
-  position: relative;
+.courses-image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-.welcome .title-sub > span {
+.courses-price {
+  position: absolute;
+  right: 25px;
+  bottom: -25px;
+}
+.courses-price h6 {
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background: #ff6e65;
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(241, 77, 93, 0.2);
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses-content {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #fff;
+}
+.courses-top {
+  color: #060606;
+}
+.courses-top li > i {
   color: #ff6e65;
 }
-.welcome .title-sub::before, .welcome .title-sub::after {
-  position: absolute;
-  content: "";
-  right: 0;
+.courses-text h4 > a {
+  color: #060606;
+  font-size: 22px;
+  margin-bottom: 10px;
   display: block;
-  width: 60px;
-  height: 2px;
-  background-color: #060606;
-  margin: 0 auto;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
 }
-.welcome .title-sub::before {
-  left: -20px;
-  bottom: -8px;
+.courses-text h4 > a:hover {
+  color: #ff6e65;
 }
-.welcome .title-sub::after {
-  left: 20px;
-  bottom: -15px;
+.courses-text p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 0.4px;
+}
+.courses-bottom {
+  border-top: 1px solid #eee;
+}
+.courses-bottom a.btn-style-primary {
+  color: #ff6e65;
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+}
+.courses-bottom a.btn-style-primary:hover {
+  color: #0d369f;
+}
+.courses .rating-list {
+  margin: 0;
+}
+.courses .rating-list li {
+  display: inline-block;
+}
+.courses .rating-list li a {
+  transition: 0.5s all;
+}
+.courses .rating-list li a i {
+  color: #ffc949;
+  font-size: 15px;
+}
+.courses .meta-list {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+.courses .meta-list a {
+  background: #1dc295;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+.courses .meta-list a:nth-child(1) {
+  background-color: #ffa100;
+}
+.courses .meta-list a:nth-child(3) {
+  background-color: #037ef3;
 }
 
 .btn:hover {
@@ -418,10 +500,24 @@ header .navbar-brand:hover {
   background-color: #ff6e65;
   border-color: #ff6e65;
 }
+.btn-secondary {
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background: #ff6e65;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+.btn-secondary:hover {
+  background: #0d369f;
+  color: #fff;
+}
 
 .carousel-item {
   width: 100%;
-  height: 89vh;
+  height: 92vh;
   position: relative;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -478,6 +574,38 @@ header .navbar-brand:hover {
 .carousel-submit:hover {
   color: #fff;
   background-color: #ff6e65;
+}
+
+.title-heading {
+  max-width: 700px;
+}
+
+.title-sub {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.title-sub > span {
+  color: #ff6e65;
+}
+.title-sub::before, .title-sub::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #060606;
+  margin: 0 auto;
+}
+.title-sub::before {
+  left: -20px;
+  bottom: -8px;
+}
+.title-sub::after {
+  left: 20px;
+  bottom: -15px;
 }
 
 /*# sourceMappingURL=style.css.map */

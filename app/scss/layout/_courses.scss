@@ -1,0 +1,120 @@
+@use '../globals/colors' as *;
+@use '../globals/fonts' as *;
+
+.courses {
+	&-wrapper {
+		background: $light;
+	}
+	&-image {
+		img {
+			display: block;
+			width: 100%;
+			object-fit: cover;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+	}
+	&-price {
+		position: absolute;
+		right: 25px;
+		bottom: -25px;
+		h6 {
+			border-radius: 100px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			background: $secondary-color;
+			color: $white;
+			box-shadow: 0px 8px 20px rgb(241 77 93 / 20%);
+			min-width: 70px;
+			min-height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&-content {
+		padding: 20px;
+		border: 1px solid #eee;
+		border-top: none;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		background: $white;
+	}
+	&-top {
+		color: $blue-dark;
+		li > i {
+			color: $secondary-color;
+		}
+	}
+	&-text {
+		h4 > a {
+			color: $blue-dark;
+			font-size: 22px;
+			margin-bottom: 10px;
+			display: block;
+			font-weight: 600;
+			text-decoration: none;
+			transition: all 0.5s;
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+		p {
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+			line-height: 28px;
+			color: $third-color;
+			letter-spacing: 0.4px;
+		}
+	}
+	&-bottom {
+		border-top: 1px solid #eee;
+		a.btn-style-primary {
+			color: $secondary-color;
+			padding: 0;
+			background: transparent;
+			font-size: 14px;
+			font-weight: 600;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	.rating-list {
+		margin: 0;
+		li {
+			display: inline-block;
+			a {
+				transition: 0.5s all;
+				i {
+					color: #ffc949;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.meta-list {
+		position: absolute;
+		left: 30px;
+		top: 15px;
+		a {
+			background: $teal;
+			display: inline-block;
+			border-radius: 3px;
+			font-size: 12px;
+			font-weight: 600;
+			padding: 4px 10px;
+			color: $white;
+			text-transform: capitalize;
+			margin-right: 5px;
+			&:nth-child(1) {
+				background-color: $orange-light;
+			}
+			&:nth-child(3) {
+				background-color: $blue-light;
+			}
+		}
+	}
+}
