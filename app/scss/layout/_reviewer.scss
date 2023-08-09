@@ -1,0 +1,50 @@
+@use '../globals/colors' as *;
+.reviewer {
+	&-item {
+		background: $white;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+		box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+		padding: 2rem;
+	}
+	&-sub {
+		q {
+			&::before {
+				font-size: 50px;
+				color: $secondary-color;
+				font-family: initial;
+				line-height: 0.8;
+				padding-top: 8px;
+				display: inline-block;
+			}
+		}
+	}
+	&-profile {
+		display: grid;
+		grid-template-columns: 0.3fr 1fr;
+		-webkit-box-align: center;
+		align-items: center;
+		grid-gap: 5px;
+		margin-top: 28px;
+	}
+	&-avatar {
+		img {
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&-info {
+		h5 {
+			font-weight: 600;
+			line-height: 16px;
+			cursor: pointer;
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+		p {
+			font-size: 13px;
+			color: $third-color;
+		}
+	}
+}
