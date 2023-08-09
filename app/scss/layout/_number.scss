@@ -1,0 +1,15 @@
+@use '../globals/colors' as *;
+.numbers {
+	&-content {
+		border-right: 1px solid #eee;
+		.counter {
+			font-size: 46px;
+			font-weight: 600;
+			color: $blue-dark;
+		}
+	}
+	&-text {
+		text-transform: uppercase;
+		color: $blue-dark;
+	}
+}

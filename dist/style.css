@@ -465,6 +465,19 @@ header .navbar-brand:hover {
   background-color: #037ef3;
 }
 
+.numbers-content {
+  border-right: 1px solid #eee;
+}
+.numbers-content .counter {
+  font-size: 46px;
+  font-weight: 600;
+  color: #060606;
+}
+.numbers-text {
+  text-transform: uppercase;
+  color: #060606;
+}
+
 .grids {
   background: url("../../../images/bg-grids.jpg");
   background-position: bottom;
