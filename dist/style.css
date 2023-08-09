@@ -287,11 +287,11 @@ header .navbar-brand:hover {
   border-radius: 10px;
 }
 .banner-content.bg-blue {
-  background-color: #007bff;
+  background-color: #037ef3;
   height: 100%;
 }
 .banner-content.bg-yellow {
-  background-color: #ffc107;
+  background-color: #ffc949;
   height: 100%;
 }
 .banner-content.bg-pink {
@@ -321,6 +321,66 @@ header .navbar-brand:hover {
   color: #000;
   transition: all 0.5s;
   text-decoration: none;
+}
+
+.welcome-item {
+  justify-content: center;
+}
+.welcome-icon > i {
+  color: #0d369f;
+  background: rgba(13, 54, 159, 0.09);
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+}
+.welcome-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  transition: all 0.5s;
+}
+.welcome-title:hover {
+  color: #ff6e65 !important;
+}
+.welcome-text {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 0.4px;
+}
+.welcome .title-heading {
+  max-width: 700px;
+}
+.welcome .title-sub {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.welcome .title-sub > span {
+  color: #ff6e65;
+}
+.welcome .title-sub::before, .welcome .title-sub::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #060606;
+  margin: 0 auto;
+}
+.welcome .title-sub::before {
+  left: -20px;
+  bottom: -8px;
+}
+.welcome .title-sub::after {
+  left: 20px;
+  bottom: -15px;
 }
 
 .btn:hover {

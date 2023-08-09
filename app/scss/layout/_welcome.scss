@@ -1,0 +1,66 @@
+@use '../globals/colors' as *;
+@use '../globals/fonts' as *;
+.welcome {
+	&-item {
+		justify-content: center;
+	}
+	&-icon {
+		> i {
+			color: $primary-color;
+			background: rgb(13 54 159 / 9%);
+			font-size: 30px;
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
+			border-radius: 50%;
+		}
+	}
+	&-title {
+		font-family: $secondary-font;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 34px;
+		transition: all 0.5s;
+		&:hover {
+			color: $secondary-color !important;
+		}
+	}
+	&-text {
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 28px;
+		color: $third-color;
+		letter-spacing: 0.4px;
+	}
+	.title-heading {
+		max-width: 700px;
+	}
+	.title-sub {
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: 600;
+		position: relative;
+		> span {
+			color: $secondary-color;
+		}
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			display: block;
+			width: 60px;
+			height: 2px;
+			background-color: $blue-dark;
+			margin: 0 auto;
+		}
+		&::before {
+			left: -20px;
+			bottom: -8px;
+		}
+		&::after {
+			left: 20px;
+			bottom: -15px;
+		}
+	}
+}
