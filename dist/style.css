@@ -465,41 +465,44 @@ header .navbar-brand:hover {
   background-color: #037ef3;
 }
 
-.btn:hover {
-  color: #212529;
-  text-decoration: none;
+.grids {
+  background: url("../../../images/bg-grids.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
-.btn:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+.grids-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
 }
-.btn-primary {
-  color: #fff;
-  background-color: #ff6e65;
-  border: none;
+.grids-icon i {
+  width: 65px;
+  height: 66px;
+  margin-right: 1rem;
+  color: #0d369f;
+  font-size: 28px;
+  background: rgba(13, 54, 159, 0.09);
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #956fef;
-  box-shadow: none;
+.grids-text h5 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #060606;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
-.btn-primary:focus {
-  color: #fff;
-  background-color: #956fef;
-  border-color: #956fef;
-  box-shadow: 0 0 0 0.2rem rgba(102, 16, 242, 0.35);
+.grids-text p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 0.4px;
+  margin: 0;
 }
-.btn-primary.forcus {
-  color: #fff;
-  background-color: #956fef;
-  border-color: #956fef;
-  box-shadow: 0 0 0 0.2rem rgba(102, 16, 242, 0.35);
-}
-.btn-primary:disabled {
-  color: #fff;
-  background-color: #ff6e65;
-  border-color: #ff6e65;
-}
+
 .btn-secondary {
   padding: 14px 30px;
   font-weight: 600;

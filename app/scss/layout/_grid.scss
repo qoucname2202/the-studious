@@ -1,0 +1,42 @@
+@use '../globals/colors' as *;
+.grids {
+	background: url('../../../images/bg-grids.jpg');
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	&-item {
+		background-color: $white;
+		padding: 30px;
+		border-radius: 8px;
+	}
+	&-icon {
+		i {
+			width: 65px;
+			height: 66px;
+			margin-right: 1rem;
+			color: $primary-color;
+			font-size: 28px;
+			background: rgb(13 54 159 / 9%);
+			line-height: 65px;
+			border-radius: 50%;
+			text-align: center;
+		}
+	}
+	&-text {
+		h5 {
+			font-size: 20px;
+			line-height: 30px;
+			color: $blue-dark;
+			font-weight: 600;
+			margin-bottom: 6px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 28px;
+			color: $third-color;
+			letter-spacing: 0.4px;
+			margin: 0;
+		}
+	}
+}

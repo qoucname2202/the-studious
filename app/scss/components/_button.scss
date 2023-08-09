@@ -1,40 +1,5 @@
 @use '../globals/colors' as *;
 .btn {
-	&:hover {
-		color: #212529;
-		text-decoration: none;
-	}
-	&:focus {
-		outline: 0;
-		box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
-	}
-	&-primary {
-		color: $white;
-		background-color: $secondary-color;
-		border: none;
-		&:hover {
-			color: $white;
-			background-color: $purple;
-			box-shadow: none;
-		}
-		&:focus {
-			color: $white;
-			background-color: $purple;
-			border-color: $purple;
-			box-shadow: 0 0 0 0.2rem rgb(102 16 242 / 35%);
-		}
-		&.forcus {
-			color: $white;
-			background-color: $purple;
-			border-color: $purple;
-			box-shadow: 0 0 0 0.2rem rgb(102 16 242 / 35%);
-		}
-		&:disabled {
-			color: $white;
-			background-color: $secondary-color;
-			border-color: $secondary-color;
-		}
-	}
 	&-secondary {
 		padding: 14px 30px;
 		font-weight: 600;
