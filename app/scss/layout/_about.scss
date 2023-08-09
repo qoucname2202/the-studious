@@ -1,0 +1,18 @@
+@use '../globals/colors' as *;
+.about {
+	&-title {
+		font-size: 35px;
+		font-weight: 600;
+		color: $blue-dark;
+		line-height: 45px;
+		text-align: left;
+	}
+	&-left {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+			color: $third-color;
+			letter-spacing: 0.4px;
+		}
+	}
+}
