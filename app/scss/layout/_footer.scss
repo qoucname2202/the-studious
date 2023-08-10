@@ -1,5 +1,6 @@
 @use '../globals/colors' as *;
 @use '../globals/fonts' as *;
+@use '../util/breakpoints' as *;
 .footer {
 	margin-top: 100px;
 	&-about {
@@ -155,39 +156,104 @@
 			border-radius: 0 8px 8px 0;
 		}
 	}
-}
-
-.form-control:focus {
-	outline: 0;
-	border: #91e6c4;
-	-webkit-box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
-	box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
-}
-.mt-columns {
-	padding-top: 120px;
-}
-.columns-2 {
-	margin-top: 1.2em;
-}
-
-.border-about {
-	border-left: 1px solid rgba(64, 73, 82, 0.51);
-}
-
-.copyright {
-	background-color: #040a17;
-	padding: 20px 0;
-	.copy-text {
-		p {
-			font-size: 15px;
-			line-height: 20px;
-			color: #a0a0a0;
-			a {
+	.form-control:focus {
+		outline: 0;
+		border: #91e6c4;
+		-webkit-box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+		box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+	}
+	.mt-columns {
+		margin-top: 120px;
+	}
+	.columns-2 {
+		margin-top: 1.2em;
+	}
+	.border-about {
+		border-left: 1px solid rgba(64, 73, 82, 0.51);
+	}
+	.copyright {
+		background-color: #040a17;
+		padding: 20px 0;
+		.copy-text {
+			p {
 				font-size: 15px;
 				line-height: 20px;
-				text-decoration: none;
 				color: #a0a0a0;
+				a {
+					font-size: 15px;
+					line-height: 20px;
+					text-decoration: none;
+					color: #a0a0a0;
+				}
 			}
+		}
+	}
+	@include maxw(991px) {
+		&-contact {
+			margin: 0 32px;
+		}
+		.border-about {
+			border-left: none;
+		}
+	}
+	@include maxw(767px) {
+		&-form {
+			button {
+				width: 30%;
+			}
+		}
+		&-contact {
+			top: -78px;
+			margin: 0 16px;
+		}
+		.border-about {
+			border-left: none;
+		}
+		.mt-columns {
+			margin-top: 150px;
+		}
+	}
+	@include minw(481px) {
+		&-heading {
+			font-size: 30px;
+		}
+	}
+	@include maxw(480px) {
+		&-heading {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		&-contact {
+			top: -160px;
+			margin: 0 10px;
+		}
+		&-form {
+			flex-wrap: wrap;
+			button {
+				width: 100%;
+				margin-top: 1em;
+				padding: 15px 30px;
+				border-radius: 4px;
+			}
+			input {
+				border-radius: 4px;
+			}
+			.footer-midd,
+			.footer-midd-2 {
+				padding: 0;
+			}
+			.mt-columns {
+				margin-top: 50px;
+			}
+		}
+	}
+	@include maxw(320px) {
+		&-heading {
+			font-size: 26px;
+			line-height: 31px;
+		}
+		.mt-columns {
+			margin-top: 150px;
 		}
 	}
 }
