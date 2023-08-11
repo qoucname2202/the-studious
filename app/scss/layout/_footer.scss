@@ -188,14 +188,7 @@
 			}
 		}
 	}
-	@include maxw(991px) {
-		&-contact {
-			margin: 0 32px;
-		}
-		.border-about {
-			border-left: none;
-		}
-	}
+
 	@include maxw(767px) {
 		&-form {
 			button {

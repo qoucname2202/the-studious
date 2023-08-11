@@ -1,5 +1,5 @@
 @use '../globals/colors' as *;
-
+@use '../util/breakpoints' as *;
 .top-header {
 	background: $primary-color;
 	padding: 14px 15px;
@@ -35,5 +35,10 @@
 				}
 			}
 		}
+	}
+}
+@include maxw(991px) {
+	.top-header {
+		display: none;
 	}
 }

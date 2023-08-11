@@ -1,4 +1,5 @@
 @use '../globals/colors' as *;
+@use '../util/breakpoints' as *;
 .banner {
 	margin-top: -5em;
 	&-item {
@@ -46,5 +47,40 @@
 			transition: all 0.5s;
 			text-decoration: none;
 		}
+	}
+}
+@include maxw(991px) {
+	.banner {
+		margin-top: -5em;
+	}
+}
+@include maxw(767px) {
+	.banner {
+		margin-top: -10em;
+	}
+}
+@include maxw(699px) {
+	.banner {
+		margin-top: -14em;
+	}
+}
+@include maxw(575px) {
+	.banner {
+		margin-top: -15em;
+	}
+}
+@include maxw(480px) {
+	.banner {
+		margin-top: -19em;
+	}
+}
+@include maxw(359px) {
+	.banner {
+		margin-top: -21em;
+	}
+}
+@include maxw(320px) {
+	.banner {
+		margin-top: -23em;
 	}
 }
