@@ -1,22 +1,50 @@
-$(document).ready(function () {
-	$('.slider').slick({
-		centerMode: true,
-		dots: true,
-		autoplay: true,
-		speed: 300,
-		centerPadding: '50px',
-		slidesToShow: 3,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '30px',
-					Infinity: true,
-					slidesToShow: 1,
-				},
-			},
-		],
-	});
-});
+(function(){
+    // Back to Top - by CodyHouse.co
+	var backTop = document.getElementsByClassName('js-cd-top')[0],
+		offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+		offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		scrollDuration = 70
+		scrolling = false;
+
+	if( backTop ) {
+		//update back to top visibility on scrolling
+		window.addEventListener("scroll", function(event) {
+			if( !scrolling ) {
+				scrolling = true;
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+			}
+		});
+
+		//smooth scroll to top
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+		});
+	}
+
+	function checkBackToTop() {
+		var windowTop = window.scrollY || document.documentElement.scrollTop;
+		( windowTop > offset ) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
+		( windowTop > offsetOpacity ) && Util.addClass(backTop, 'cd-top--fade-out');
+		scrolling = false;
+	}
+})();
+
+//xác định header
+var header = document.getElementsByTagName("header")[0];
+window.onscroll = function () {
+		var offset = window.pageYOffset;
+		if (offset >= 52) {
+				header.classList.add("fixed-top");
+	}
+		else {
+		header.classList.remove("fixed-top");
+	}
+}
+
+// tạo toggle dark and light theme
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+

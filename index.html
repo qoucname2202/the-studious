@@ -1365,6 +1365,11 @@
 				</div>
 			</section>
 		</footer>
+		<!--  -->
+		<!-- Back To Top -->
+		<a href="#" class="back-to-top cd-top text-replace js-cd-top">
+			<i class="fa fa-level-up"></i>
+		</a>
 		<!-- Jquery -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -1385,6 +1390,10 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
 		<!-- Couter Up -->
 		<script src="./app/js/jquery.countup.js"></script>
 		<script>
@@ -1394,11 +1403,32 @@
 			});
 		</script>
 		<!-- Slick -->
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<!-- My script -->
+		<script>
+			$(document).ready(function () {
+				$('.slider').slick({
+					centerMode: true,
+					dots: true,
+					autoplay: true,
+					speed: 300,
+					centerPadding: '50px',
+					slidesToShow: 3,
+					responsive: [
+						{
+							breakpoint: 768,
+							settings: {
+								arrows: false,
+								centerMode: true,
+								centerPadding: '30px',
+								Infinity: true,
+								slidesToShow: 1,
+							},
+						},
+					],
+				});
+			});
+		</script>
+		<!-- Back to top -->
+		<script src="./app/js/util.js"></script>
 		<script defer src="./app/js/main.js"></script>
 	</body>
 </html>
