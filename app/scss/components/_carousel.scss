@@ -65,14 +65,14 @@
 		&-caption {
 			position: absolute;
 			max-width: 600px;
-			left: 6% !important;
+			left: 8% !important;
 			h5 {
 				font-size: 50px;
 				line-height: 60px;
 			}
 		}
 	}
-	@include maxw(1199px) {
+	@include maxw(1279px) {
 		&-caption {
 			position: absolute;
 			max-width: 450px;
@@ -94,7 +94,7 @@
 			}
 		}
 	}
-	@include maxw(991px) {
+	@include maxw(767px) {
 		&-caption {
 			position: absolute;
 			max-width: 370px;
@@ -160,7 +160,7 @@
 			}
 		}
 	}
-	@include maxw(480px) {
+	@include maxw(474px) {
 		&-caption {
 			position: absolute;
 			max-width: 230px;

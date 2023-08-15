@@ -785,18 +785,12 @@ header .navbar-brand:hover {
 }
 .footer-sub .sub-social .social {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 20px;
 }
 .footer-sub .sub-social .social li > a {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
   width: 35px;
@@ -808,7 +802,6 @@ header .navbar-brand:hover {
 }
 .footer-sub .sub-social .social li > a:hover {
   opacity: 0.8;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .footer-heading {
@@ -833,12 +826,9 @@ header .navbar-brand:hover {
   left: 0;
   right: 0;
   top: -60px;
-  -webkit-box-shadow: 0px -1px 41px 0px rgba(21, 22, 23, 0.08);
   box-shadow: 0px -1px 41px 0px rgba(21, 22, 23, 0.08);
 }
 .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .footer-form input {
@@ -863,6 +853,10 @@ header .navbar-brand:hover {
   font-weight: 600;
   border-radius: 0 8px 8px 0;
 }
+.footer-form button:hover {
+  background: #ff6e65;
+  color: #fff;
+}
 .footer .form-control:focus {
   outline: 0;
   border: #91e6c4;
@@ -873,7 +867,7 @@ header .navbar-brand:hover {
   margin-top: 120px;
 }
 .footer .columns-2 {
-  margin-top: 1.2em;
+  margin-top: 25px;
 }
 .footer .border-about {
   border-left: 1px solid rgba(64, 73, 82, 0.51);
@@ -893,13 +887,19 @@ header .navbar-brand:hover {
   text-decoration: none;
   color: #a0a0a0;
 }
+@media screen and (max-width: 1024px) {
+  .footer-contact {
+    top: -78px;
+    margin: 0 14px;
+  }
+}
 @media screen and (max-width: 767px) {
   .footer-form button {
     width: 30%;
   }
   .footer-contact {
     top: -78px;
-    margin: 0 16px;
+    margin: 0 18px;
   }
   .footer .border-about {
     border-left: none;
@@ -908,12 +908,12 @@ header .navbar-brand:hover {
     margin-top: 150px;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 639px) {
   .footer-heading {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 474px) {
   .footer-heading {
     font-size: 30px;
     margin-bottom: 10px;
@@ -1069,14 +1069,14 @@ header .navbar-brand:hover {
   .carousel-caption {
     position: absolute;
     max-width: 600px;
-    left: 6% !important;
+    left: 8% !important;
   }
   .carousel-caption h5 {
     font-size: 50px;
     line-height: 60px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .carousel-caption {
     position: absolute;
     max-width: 450px;
@@ -1098,7 +1098,7 @@ header .navbar-brand:hover {
     line-height: 50px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .carousel-caption {
     position: absolute;
     max-width: 370px;
@@ -1164,7 +1164,7 @@ header .navbar-brand:hover {
     margin-left: 3px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 474px) {
   .carousel-caption {
     position: absolute;
     max-width: 230px;
