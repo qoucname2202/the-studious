@@ -64,7 +64,7 @@
 		height: auto !important;
 		opacity: 0.5;
 		transition: all 900ms ease;
-		.xyz {
+		.profile {
 			opacity: 0;
 		}
 	}
@@ -73,7 +73,7 @@
 		transform: scale(1.2);
 		z-index: 99;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		.xyz {
+		.profile {
 			opacity: 1;
 		}
 	}

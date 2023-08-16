@@ -568,7 +568,7 @@ header .navbar-brand:hover {
   opacity: 0.5;
   transition: all 900ms ease;
 }
-.slick-slide .xyz {
+.slick-slide .profile {
   opacity: 0;
 }
 .slick-current {
@@ -577,7 +577,7 @@ header .navbar-brand:hover {
   z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.slick-current .xyz {
+.slick-current .profile {
   opacity: 1;
 }
 
