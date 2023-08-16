@@ -110,9 +110,9 @@ button:hover {
 }
 
 ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 nav ul li {
@@ -150,7 +150,7 @@ nav ul li {
 }
 .top-header-wrapper {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .top-header-content {
@@ -187,7 +187,7 @@ nav ul li {
 }
 header {
   background-color: transparent;
-  padding: 0px;
+  padding: 0;
   transition: all 0.4s ease 0s;
   display: grid;
   border-bottom: none;
@@ -220,7 +220,7 @@ header .navbar-nav .nav-item .dropdown-menu {
   transform: translateX(-50px);
   background: #fff;
   border: 1px solid transparent;
-  box-shadow: rgba(12, 12, 12, 0.06) 0px 1px 20px 0px;
+  box-shadow: rgba(12, 12, 12, 0.06) 0 1px 20px 0;
 }
 header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   font-size: 16px;
@@ -248,7 +248,6 @@ header .navbar-nav .nav-item .nav-link.active {
 header .navbar form .search-popup {
   font-size: 15px;
   color: #060606;
-  border: none;
   background: transparent;
   padding: 10px 35px 10px 14px;
   width: 100%;
@@ -415,7 +414,7 @@ header .navbar-brand:hover {
   text-align: center;
   background: #ff6e65;
   color: #fff;
-  box-shadow: 0px 8px 20px rgba(241, 77, 93, 0.2);
+  box-shadow: 0 8px 20px rgba(241, 77, 93, 0.2);
   min-width: 70px;
   min-height: 70px;
   display: flex;
@@ -508,7 +507,7 @@ header .navbar-brand:hover {
 .slick-slider button {
   position: absolute;
   top: 32%;
-  outline: "none";
+  outline: none;
   border: none;
   width: 40px;
   height: 40px;
@@ -575,7 +574,7 @@ header .navbar-brand:hover {
   opacity: 1;
   transform: scale(1.2);
   z-index: 99;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 .slick-current .profile {
   opacity: 1;
@@ -622,12 +621,11 @@ header .navbar-brand:hover {
 }
 
 .grids {
-  background: url("../../../images/bg-grids.jpg");
-  background-position: bottom;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: url("../../../images/bg-grids.jpg") no-repeat bottom;
   width: 100%;
 }
+
 .grids-item {
   background-color: #fff;
   padding: 30px;
@@ -738,7 +736,7 @@ header .navbar-brand:hover {
   color: #cecece;
   font-size: 14px;
   line-height: 24px;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
   display: block;
 }
 .footer-sub .sub-desc ul > li > a:hover {
@@ -759,7 +757,7 @@ header .navbar-brand:hover {
   color: #cecece;
   font-size: 14px;
   line-height: 24px;
-  margin: 0px 0px 15px 0px;
+  margin: 0 0 15px 0;
   display: block;
 }
 .footer-sub .sub-contact ul > li > a:hover {
@@ -826,7 +824,7 @@ header .navbar-brand:hover {
   left: 0;
   right: 0;
   top: -60px;
-  box-shadow: 0px -1px 41px 0px rgba(21, 22, 23, 0.08);
+  box-shadow: 0 -1px 41px 0 rgba(21, 22, 23, 0.08);
 }
 .footer-form {
   display: flex;
@@ -835,9 +833,8 @@ header .navbar-brand:hover {
   width: 100%;
   height: 55px;
   font-size: 16px;
-  border: none;
   background: transparent;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
   border: 1px solid #eeeeee;
   color: #060606;
   line-height: 24px;
